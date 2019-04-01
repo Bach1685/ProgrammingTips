@@ -1,0 +1,62 @@
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\MongoDBUsing.exe.config
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\MongoDBUsing.exe
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\MongoDBUsing.pdb
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Data.Common.dll
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Diagnostics.StackTrace.dll
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Diagnostics.Tracing.dll
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Globalization.Extensions.dll
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\System.IO.Compression.dll
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Net.Http.dll
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Net.Sockets.dll
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Runtime.Serialization.Primitives.dll
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Security.Cryptography.Algorithms.dll
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Security.SecureString.dll
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Threading.Overlapped.dll
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Xml.XPath.XDocument.dll
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\DnsClient.dll
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\MongoDB.Bson.dll
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\MongoDB.Driver.Core.dll
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\MongoDB.Driver.dll
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Buffers.dll
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\DnsClient.xml
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\MongoDB.Bson.xml
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\MongoDB.Driver.xml
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\MongoDB.Driver.Core.xml
+D:\Programming tips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Buffers.xml
+D:\Programming tips\WcfServiceExample\MongoDBUsing\obj\Debug\MongoDBUsing.csprojAssemblyReference.cache
+D:\Programming tips\WcfServiceExample\MongoDBUsing\obj\Debug\MongoDBUsing.exe.config
+D:\Programming tips\WcfServiceExample\MongoDBUsing\obj\Debug\MongoDBUsing.csproj.CoreCompileInputs.cache
+D:\Programming tips\WcfServiceExample\MongoDBUsing\obj\Debug\MongoDBUsing.csproj.CopyComplete
+D:\Programming tips\WcfServiceExample\MongoDBUsing\obj\Debug\MongoDBUsing.exe
+D:\Programming tips\WcfServiceExample\MongoDBUsing\obj\Debug\MongoDBUsing.pdb
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\MongoDBUsing.exe.config
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\MongoDBUsing.exe
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\MongoDBUsing.pdb
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Data.Common.dll
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Diagnostics.StackTrace.dll
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Diagnostics.Tracing.dll
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Globalization.Extensions.dll
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\System.IO.Compression.dll
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Net.Http.dll
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Net.Sockets.dll
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Runtime.Serialization.Primitives.dll
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Security.Cryptography.Algorithms.dll
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Security.SecureString.dll
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Threading.Overlapped.dll
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Xml.XPath.XDocument.dll
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\DnsClient.dll
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\MongoDB.Bson.dll
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\MongoDB.Driver.Core.dll
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\MongoDB.Driver.dll
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Buffers.dll
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\DnsClient.xml
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\MongoDB.Bson.xml
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\MongoDB.Driver.xml
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\MongoDB.Driver.Core.xml
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\bin\Debug\System.Buffers.xml
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\obj\Debug\MongoDBUsing.csprojAssemblyReference.cache
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\obj\Debug\MongoDBUsing.exe.config
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\obj\Debug\MongoDBUsing.csproj.CoreCompileInputs.cache
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\obj\Debug\MongoDBUsing.csproj.CopyComplete
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\obj\Debug\MongoDBUsing.exe
+D:\ProgrammingTips\WcfServiceExample\MongoDBUsing\obj\Debug\MongoDBUsing.pdb

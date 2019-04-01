@@ -1,0 +1,7 @@
+http://rgblog.ru/page/git-dlja-chajnika-komandy-kotorye-pomogut-nachat-rabotu
+
+https://help.github.com/en/articles/connecting-to-github-with-ssh
+
+https://git-scm.com/book/ru/v1/Git-на-сервере-Создание-открытого-SSH-ключа
+
+https://www.youtube.com/watch?v=CUDgSbaYGx4
