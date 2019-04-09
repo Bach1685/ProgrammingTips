@@ -8,6 +8,7 @@ using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson.Serialization.IdGenerators;
 using System.Configuration;
 using MongoDB.Driver;
+//using DemoCSharpAndMongoDB;
 
 namespace MongoDBUsing
 {
@@ -15,72 +16,90 @@ namespace MongoDBUsing
     {
         static void Main(string[] args)
         {
-            MongoDAO<Game> mongoGame = new MongoDAO<Game>();
-            MongoDAO<Men> mongoMen = new MongoDAO<Men>();
+            MongoDAO<Person> mongoDAO = new MongoDAO<Person>("Person");
 
-            Game game = new Game { Status = "1", GameName = "rd" };
-            Men men = new Men { Name = "Igor", Old = 30 };
-            if(true)
-            { }
+            //Random number = new Random();
+            //string[] nameArr = new string[] { "Alex", "Viktor", "Oleg", "Olga", "Elena", "Viktoria", "Vazgen" };
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    Person person = new Person()
+            //    {
+            //        FirstName = nameArr[number.Next(0, nameArr.Count())],
+            //        Old = number.Next(20, 80),
+            //        AppearInDB = DateTime.Now,
+            //        BankAccount = number.Next(10000, 20001),
+            //    };
 
+            //    mongoDAO.Create(person);
+            //}
 
-            mongoMen.Create(men);
-            mongoGame.Create(game);
-            
             Console.WriteLine("Запись прошла");
             Console.ReadKey();
         }
     }
 
-    class MongoDAO<T>// where T: Game // класс подключения к базе данных
+    class MongoDAO<T> where T : Person // класс подключения к базе данных
     {
         string ConnectionString { get; set; }
         MongoClient Client { get; set; }
         IMongoDatabase Database { get; set; }
-        //IMongoCollection<MongoDocument> mongoCollection { get; set; }
-        IMongoCollection<Men> mongoCollectionFirst { get; set; }
-        IMongoCollection<T> mongoCollectionSecond { get; set; }
-        T game { get; set; }
+        IMongoCollection<T> Collection { get; set; }
 
-        public MongoDAO()
+        public MongoDAO(string collectionName)
         {
             ConnectionString = ConfigurationManager.ConnectionStrings["MongoDb"].ConnectionString; // для ConfigurationManager вручную нужно добавить ссылку System.Configuration
             Client = new MongoClient(ConnectionString);
             Database = Client.GetDatabase("test");
-            mongoCollectionFirst = Database.GetCollection<Men>("users");
-            mongoCollectionSecond = Database.GetCollection<T>("users");
+
+            try
+            {
+                Database.CreateCollection(collectionName);
+            }
+            catch { }
+
+            Collection = Database.GetCollection<T>(collectionName);
         }
 
-        public void Create(T doc)
+        public void FindAll()
         {
-            //MongoDocument document = new MongoDocument { Name = "Igor", Old = 30 };
-            //mongoCollection.InsertOne(document);
+            var allDocuments = Collection.AsQueryable().ToList();
+        }
 
-            mongoCollectionSecond.InsertOne(doc);
+        public void FindOne(string id)
+        {
+            var documentId = new ObjectId(id);
+            var document = Collection.AsQueryable<T>().SingleOrDefault(x => x.Id == documentId);
+        }
+
+        public T FindOneV2(string id)
+        {
+            var documentId = new ObjectId(id);
+            var builder = Builders<T>.Filter;
+            var filter = builder.Eq(x => x.Id, documentId);
+            return Collection.Find(filter).FirstOrDefault();
+        }
+
+        public void Create(T document)
+        {
+            Collection.InsertOne(document);
         }
     }
 
-    class Men
+    class Person
     {
         [BsonId]
         public ObjectId Id { get; set; }
 
-        [BsonElement("name")]
-        public string Name { get; set; }
+        [BsonElement("First name")]
+        public string FirstName { get; set; }
 
-        [BsonElement("old")]
+        [BsonElement("Old")]
         public int Old { get; set; }
-    }
 
-    class Game
-    {
-        [BsonId]
-        public ObjectId Id { get; set; }
+        [BsonElement("The time of appear in datebase")]
+        public DateTime AppearInDB { get; set; }
 
-        [BsonElement("gameName")]
-        public string GameName { get; set; }
-
-        [BsonElement("status")]
-        public string Status { get; set; }
+        [BsonElement("Bank account")]
+        public decimal BankAccount { get; set; }
     }
 }
