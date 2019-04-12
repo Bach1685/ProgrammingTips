@@ -48,9 +48,11 @@ namespace MongoDBUsing
             Collection = Database.GetCollection<T>(collectionName);
         }
 
-        public void FindAll()
+        public List<T> GetAll()
         {
             var allDocuments = Collection.AsQueryable().ToList();
+
+            return allDocuments;
         }
 
         public void FindOne(string id)
