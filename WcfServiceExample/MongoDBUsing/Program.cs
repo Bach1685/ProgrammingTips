@@ -18,36 +18,24 @@ namespace MongoDBUsing
         {
             MongoDAO<Person> mongoDAO = new MongoDAO<Person>("Person");
 
-            //Random number = new Random();
-            //string[] nameArr = new string[] { "Alex", "Viktor", "Oleg", "Olga", "Elena", "Viktoria", "Vazgen" };
-            //for (int i = 0; i < 10; i++)
-            //{
-            //    Person person = new Person()
-            //    {
-            //        FirstName = nameArr[number.Next(0, nameArr.Count())],
-            //        Old = number.Next(20, 80),
-            //        AppearInDB = DateTime.Now,
-            //        BankAccount = number.Next(10000, 20001),
-            //    };
+            //mongoDAO. // вызваем метод для работы с БД
 
-            //    mongoDAO.Create(person);
-            //}
-
-            Console.WriteLine("Запись прошла");
+            Console.WriteLine("Нажмите любую кнопку, чтобы завершить");
             Console.ReadKey();
         }
     }
 
     class MongoDAO<T> where T : Person // класс подключения к базе данных
     {
-        string ConnectionString { get; set; }
-        MongoClient Client { get; set; }
+        string ConnectionString { get; set; } // строка подключения, в которой адрес сервера, пароль и т.д.
+        MongoClient Client { get; set; } 
         IMongoDatabase Database { get; set; }
         IMongoCollection<T> Collection { get; set; }
 
         public MongoDAO(string collectionName)
         {
             ConnectionString = ConfigurationManager.ConnectionStrings["MongoDb"].ConnectionString; // для ConfigurationManager вручную нужно добавить ссылку System.Configuration
+            //ConnectionString берется из App.config 
             Client = new MongoClient(ConnectionString);
             Database = Client.GetDatabase("test");
 
@@ -79,13 +67,34 @@ namespace MongoDBUsing
             return Collection.Find(filter).FirstOrDefault();
         }
 
+        public void FindFragment(string keyWord)
+        {
+            var document = Collection.AsQueryable<T>().Where(x => x.FirstName.Contains(keyWord)).ToList();
+        }
+
+        public int Sum()
+        {
+            var sum = Collection.AsQueryable<T>().Sum(x => x.Old);
+            return sum;
+        }
+
         public void Create(T document)
         {
             Collection.InsertOne(document);
         }
+
+        public void Update(string id)
+        {
+            Collection.UpdateOne(Builders<T>.Filter.Eq("_id", ObjectId.Parse(id)), Builders<T>.Update.Set("Old", 30));
+        }
+
+        public void Delete(string id)
+        {
+            Collection.DeleteOne(Builders<T>.Filter.Eq("_id", ObjectId.Parse(id)));
+        }
     }
 
-    class Person
+    class Person // класс сериализации в json 
     {
         [BsonId]
         public ObjectId Id { get; set; }
