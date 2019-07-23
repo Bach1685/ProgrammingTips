@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceExample", "WcfSer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDBUsing", "MongoDBUsing\MongoDBUsing.csproj", "{525A9E5C-CAA7-4057-9A12-566867974169}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySQL_Using", "MySQL_Using\MySQL_Using.csproj", "{DFC63B52-83B4-4D35-85ED-AAE4669734B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{DD1D9EBB-2516-403F-8B63-D38E9F427FB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{525A9E5C-CAA7-4057-9A12-566867974169}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{525A9E5C-CAA7-4057-9A12-566867974169}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{525A9E5C-CAA7-4057-9A12-566867974169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFC63B52-83B4-4D35-85ED-AAE4669734B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFC63B52-83B4-4D35-85ED-AAE4669734B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFC63B52-83B4-4D35-85ED-AAE4669734B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFC63B52-83B4-4D35-85ED-AAE4669734B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD1D9EBB-2516-403F-8B63-D38E9F427FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD1D9EBB-2516-403F-8B63-D38E9F427FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD1D9EBB-2516-403F-8B63-D38E9F427FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD1D9EBB-2516-403F-8B63-D38E9F427FB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
